@@ -1,0 +1,26 @@
+Information on the BASH Script to convert callsigns to .gsm audio files
+so your your node speaks the callsign of the node you are connecting to
+instead of just the node number.
+
+This is how I installed the script.
+
+Downloaded the script    write_node_callsigns.tar.gz  onto my Windows PC.
+
+Using WinSCP I made a new directory called scripts in  /etc/asterisk
+then I opened     /etc/asterisk/scripts
+
+Move the zipped file into that directory
+Now using Putty I switched to that directory
+
+cd /etc/asterisk/scripts
+
+unzip the file
+
+Run the script by typing      
+./write_node_callsigns
+
+You should now see a whole bunch of text flying my on the screen as 
+it is now converting all the callsigns in /var/log/asterisk/astdb.txt
+into .gsm audio files.
+
+the .gsm files will be be stored in /var/lib/asterisk/sounds/rpt/nodemames
